@@ -1,0 +1,2507 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O Código Dourado — Portal Siriano 8/8 | Arraial d'Ajuda</title>
+  <meta name="description" content="Participação VIP no Portal 8:8 em Arraial d'Ajuda — sábado, 08 de agosto de 2026, a partir das 10h. Meditação, arte, Kundalini, cerimônia e integração.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f4eee4;
+      --champagne: #e9dac3;
+      --sand: #d9c3aa;
+      --rose: #c9a6a5;
+      --lavender: #ada5bc;
+      --night: #111727;
+      --rouge: #702633;
+      --plum: #331c46;
+      --gold: #b8873f;
+      --gold-soft: #dfbf7a;
+      --ink: #27201c;
+      --muted: #76695f;
+      --line: rgba(81, 55, 42, .2);
+      --white: #fffaf2;
+      --shadow: 0 26px 70px rgba(54, 33, 25, .14);
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --display: "Marcellus", "Cormorant Garamond", serif;
+      --sans: "Inter", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(223, 191, 122, .24), transparent 30rem),
+        radial-gradient(circle at 90% 18%, rgba(112, 38, 51, .13), transparent 28rem),
+        linear-gradient(135deg, #fff8ed 0%, var(--paper) 38%, #e5d6c6 100%);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+      opacity: .22;
+      background-image:
+        linear-gradient(rgba(39, 32, 28, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(39, 32, 28, .025) 1px, transparent 1px);
+      background-size: 46px 46px;
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.95), transparent 78%);
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 3;
+      opacity: .16;
+      background-image:
+        radial-gradient(circle at 18% 26%, rgba(51, 28, 70, .7) 0 1px, transparent 2px),
+        radial-gradient(circle at 70% 72%, rgba(184, 135, 63, .8) 0 1px, transparent 2px);
+      background-size: 120px 120px, 180px 180px;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    img, video { max-width: 100%; display: block; }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .page {
+      position: relative;
+      z-index: 4;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .28;
+      background-image:
+        url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.23'/%3E%3C/svg%3E");
+      mix-blend-mode: multiply;
+    }
+
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      padding: 22px clamp(18px, 4vw, 54px);
+      color: var(--white);
+      mix-blend-mode: difference;
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .nav__brand {
+      font-size: clamp(15px, 1.9vw, 23px);
+      line-height: .92;
+      letter-spacing: .03em;
+      font-weight: 300;
+    }
+
+    .nav__links {
+      display: flex;
+      gap: clamp(12px, 2.4vw, 34px);
+      color: rgba(255,255,255,.86);
+    }
+
+    .nav__year {
+      justify-self: end;
+      font-size: clamp(16px, 2vw, 24px);
+      letter-spacing: .04em;
+      font-weight: 300;
+    }
+
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: grid;
+      align-items: stretch;
+      padding: 0;
+      color: var(--white);
+      background: var(--night);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero__video {
+      position: absolute;
+      inset: 0;
+      z-index: -4;
+      overflow: hidden;
+      background: #0d101d;
+    }
+
+    .hero__video video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: saturate(1.22) contrast(1.06) brightness(.8);
+      transform: scale(1.04);
+    }
+
+    .hero__wash {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background:
+        linear-gradient(90deg, rgba(10, 13, 24, .9), rgba(22, 12, 34, .34) 48%, rgba(10, 13, 24, .74)),
+        radial-gradient(circle at 72% 40%, rgba(184, 135, 63, .25), transparent 24rem),
+        radial-gradient(circle at 16% 82%, rgba(112, 38, 51, .36), transparent 28rem);
+    }
+
+    .hero__bloom {
+      position: absolute;
+      z-index: -2;
+      width: 52vw;
+      aspect-ratio: 1;
+      right: -12vw;
+      top: 8vh;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, rgba(223, 191, 122, .22), transparent 54%),
+        conic-gradient(from 120deg, transparent, rgba(173, 165, 188, .16), transparent, rgba(112, 38, 51, .18), transparent);
+      filter: blur(10px);
+      animation: float 9s ease-in-out infinite alternate;
+    }
+
+    .hero__inner {
+      min-height: 100svh;
+      width: min(1500px, 100%);
+      margin: 0 auto;
+      padding: clamp(96px, 11vw, 150px) clamp(18px, 5vw, 72px) 42px;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      gap: 30px;
+    }
+
+    .hero__content {
+      display: grid;
+      align-content: center;
+      max-width: 1060px;
+    }
+
+    .kicker {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--gold-soft);
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 48px;
+      height: 1px;
+      background: currentColor;
+      opacity: .72;
+    }
+
+    .hero h1 {
+      margin: 18px 0 0;
+      max-width: 1050px;
+      font-family: var(--display);
+      font-size: clamp(64px, 13vw, 184px);
+      line-height: .78;
+      letter-spacing: .015em;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-wrap: balance;
+      text-shadow: 0 22px 70px rgba(0,0,0,.36);
+    }
+
+    .hero__phrase {
+      margin: clamp(18px, 3vw, 34px) 0 0;
+      max-width: 640px;
+      font-family: var(--serif);
+      font-size: clamp(27px, 4.2vw, 56px);
+      line-height: .95;
+      font-weight: 500;
+      color: #fff4df;
+      text-wrap: balance;
+    }
+
+    .hero__text {
+      width: min(640px, 100%);
+      margin: 22px 0 0;
+      color: rgba(255,250,242,.76);
+      font-size: clamp(15px, 1.35vw, 18px);
+      line-height: 1.75;
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 15px 22px;
+      border: 1px solid rgba(184, 135, 63, .48);
+      border-radius: 999px;
+      background: linear-gradient(135deg, #d9af64, #8f5f22);
+      color: #1e1712;
+      font-family: var(--sans);
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      box-shadow: 0 18px 42px rgba(184, 135, 63, .25);
+      cursor: pointer;
+      transition: transform .35s ease, box-shadow .35s ease, background .35s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 26px 60px rgba(184, 135, 63, .33);
+    }
+
+    .button--ghost {
+      background: rgba(255,250,242,.08);
+      color: var(--white);
+      border-color: rgba(255,250,242,.32);
+      box-shadow: none;
+      backdrop-filter: blur(16px);
+    }
+
+    .button--ink {
+      background: var(--night);
+      color: var(--white);
+      border-color: rgba(17,23,39,.2);
+      box-shadow: 0 20px 46px rgba(17, 23, 39, .2);
+    }
+
+    .button--plain {
+      background: transparent;
+      color: var(--ink);
+      border-color: var(--line);
+      box-shadow: none;
+    }
+
+    .hero__meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid rgba(255,250,242,.22);
+      border-bottom: 1px solid rgba(255,250,242,.22);
+      background: rgba(255,250,242,.055);
+      backdrop-filter: blur(18px);
+    }
+
+    .hero__meta div {
+      padding: 18px clamp(12px, 2vw, 28px);
+      border-right: 1px solid rgba(255,250,242,.16);
+    }
+
+    .hero__meta div:last-child { border-right: 0; }
+
+    .label {
+      display: block;
+      margin-bottom: 8px;
+      color: rgba(255,250,242,.52);
+      font-size: 10px;
+      letter-spacing: .19em;
+      text-transform: uppercase;
+    }
+
+    .hero__meta strong {
+      display: block;
+      color: #fff6e8;
+      font-family: var(--serif);
+      font-size: clamp(19px, 2vw, 28px);
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .section {
+      position: relative;
+      padding: clamp(78px, 10vw, 150px) clamp(18px, 5vw, 72px);
+    }
+
+    .section__inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      min-width: 0;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: minmax(0, .96fr) minmax(300px, .72fr);
+      gap: clamp(30px, 6vw, 96px);
+      align-items: center;
+    }
+
+    .split > *,
+    .reveal {
+      min-width: 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 18px;
+      color: var(--rouge);
+      font-size: 11px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 38px;
+      height: 1px;
+      background: currentColor;
+      opacity: .55;
+    }
+
+    h2 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(42px, 7vw, 96px);
+      line-height: .88;
+      font-weight: 500;
+      color: var(--night);
+      text-wrap: balance;
+      overflow-wrap: break-word;
+    }
+
+    h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-size: clamp(30px, 4.2vw, 58px);
+      line-height: .95;
+      font-weight: 500;
+      color: var(--night);
+      text-wrap: balance;
+      overflow-wrap: break-word;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.82;
+      font-size: 16px;
+    }
+
+    .lead {
+      margin-top: 28px;
+      font-size: clamp(17px, 1.55vw, 21px);
+      line-height: 1.72;
+      color: #5f5149;
+    }
+
+    .concept-card {
+      position: relative;
+      padding: clamp(28px, 5vw, 54px);
+      min-height: 430px;
+      display: grid;
+      align-content: end;
+      border: 1px solid rgba(184, 135, 63, .18);
+      background: transparent;
+      box-shadow: 0 34px 86px rgba(54, 33, 25, .14);
+      overflow: hidden;
+    }
+
+    .concept-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      border: 0;
+      background: linear-gradient(90deg, rgba(17, 23, 39, .62), rgba(17, 23, 39, .18) 48%, rgba(17, 23, 39, .04));
+      pointer-events: none;
+    }
+
+    .concept-card::after {
+      content: none;
+      position: absolute;
+      width: 58%;
+      aspect-ratio: 1;
+      right: -12%;
+      top: -6%;
+      border: 1px solid rgba(184, 135, 63, .38);
+      border-radius: 50%;
+      box-shadow: inset 0 0 0 28px rgba(184, 135, 63, .04);
+    }
+
+    .key-art {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: none;
+      filter: none;
+    }
+
+    .script-note {
+      position: relative;
+      z-index: 2;
+      max-width: 330px;
+      font-family: var(--serif);
+      color: #fff0dc;
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1;
+      text-shadow: 0 2px 18px rgba(17, 23, 39, .62), 0 1px 0 rgba(112, 38, 51, .42);
+    }
+
+    .portal-section {
+      padding-top: 0;
+      background:
+        linear-gradient(to bottom, transparent 0%, rgba(17, 23, 39, .08) 18%, rgba(17, 23, 39, .02) 100%);
+    }
+
+    .cinema {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+      transform-style: preserve-3d;
+      perspective: 1200px;
+    }
+
+    .cinema__frame {
+      position: relative;
+      aspect-ratio: 16 / 8.5;
+      overflow: hidden;
+      background: #12121a;
+      border: 1px solid rgba(184, 135, 63, .32);
+      box-shadow: 0 36px 90px rgba(17, 23, 39, .28);
+      transform: rotateX(2deg);
+      isolation: isolate;
+    }
+
+    .cinema__frame::before {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      z-index: 3;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(17,23,39,.82), transparent 24%, transparent 76%, rgba(17,23,39,.82)),
+        linear-gradient(0deg, rgba(17,23,39,.68), transparent 28%, transparent 72%, rgba(17,23,39,.74));
+    }
+
+    .cinema__frame::after {
+      content: "";
+      position: absolute;
+      inset: 28px;
+      z-index: 4;
+      border: 1px solid rgba(223,191,122,.23);
+      pointer-events: none;
+    }
+
+    .cinema video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .46;
+      filter: blur(18px) saturate(1.18);
+      transform: scale(1.16);
+    }
+
+    .cinema video.video-main {
+      z-index: 2;
+      object-fit: cover;
+      opacity: 1;
+      filter: drop-shadow(0 30px 60px rgba(0,0,0,.34)) saturate(1.22) contrast(1.06);
+      transform: translateZ(84px) scale(.94);
+    }
+
+    .cinema__copy {
+      position: absolute;
+      z-index: 5;
+      left: clamp(22px, 5vw, 68px);
+      bottom: clamp(22px, 4vw, 54px);
+      max-width: 480px;
+      color: var(--white);
+    }
+
+    .cinema__copy span {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--gold-soft);
+      font-size: 10px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .cinema__copy h2 {
+      color: var(--white);
+      font-size: clamp(36px, 6vw, 78px);
+      text-shadow: 0 18px 50px rgba(0,0,0,.38);
+    }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      margin-top: 52px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .timeline__item {
+      min-height: 320px;
+      padding: clamp(24px, 3vw, 38px);
+      background:
+        linear-gradient(160deg, rgba(255,250,242,.8), rgba(233,218,195,.46)),
+        radial-gradient(circle at 80% 10%, rgba(184,135,63,.15), transparent 14rem);
+      display: grid;
+      align-content: space-between;
+      transition: transform .35s ease, background .35s ease;
+    }
+
+    .timeline__item:hover {
+      transform: translateY(-6px);
+      background:
+        linear-gradient(160deg, rgba(255,250,242,.94), rgba(236,224,209,.68)),
+        radial-gradient(circle at 80% 10%, rgba(112,38,51,.16), transparent 14rem);
+    }
+
+    .timeline__number {
+      font-family: var(--display);
+      color: var(--gold);
+      font-size: 58px;
+      line-height: 1;
+    }
+
+    .timeline__item h3 {
+      margin-top: 46px;
+      font-size: clamp(30px, 4vw, 56px);
+    }
+
+    .timeline__item p {
+      margin: 18px 0 0;
+    }
+
+    .experience {
+      background:
+        radial-gradient(circle at 10% 22%, rgba(112, 38, 51, .11), transparent 28rem),
+        linear-gradient(180deg, rgba(255,250,242,.54), rgba(233,218,195,.52));
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 46px;
+    }
+
+    .card {
+      position: relative;
+      min-height: 210px;
+      padding: 28px;
+      border: 1px solid rgba(81, 55, 42, .16);
+      background: rgba(255, 250, 242, .58);
+      box-shadow: 0 18px 48px rgba(54, 33, 25, .08);
+      backdrop-filter: blur(14px);
+      overflow: hidden;
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 24px 58px rgba(54, 33, 25, .13);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 96px;
+      height: 1px;
+      top: 28px;
+      right: 26px;
+      background: linear-gradient(90deg, transparent, rgba(184,135,63,.8));
+    }
+
+    .card span {
+      display: inline-flex;
+      width: 34px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 34px;
+      border: 1px solid rgba(184, 135, 63, .42);
+      color: var(--rouge);
+      font-family: var(--display);
+      font-size: 16px;
+    }
+
+    .card h3 {
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .card p {
+      margin: 14px 0 0;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .identity-list {
+      display: grid;
+      gap: 12px;
+      margin: 40px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .identity-list li {
+      position: relative;
+      padding: 18px 18px 18px 52px;
+      border-bottom: 1px solid var(--line);
+      color: #53463f;
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.4vw, 32px);
+      line-height: 1.08;
+    }
+
+    .identity-list li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 24px;
+      width: 28px;
+      height: 28px;
+      border: 1px solid rgba(184, 135, 63, .58);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(184,135,63,.7) 0 2px, transparent 3px);
+    }
+
+    .hourglass {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      border: 1px solid rgba(184, 135, 63, .28);
+      box-shadow: var(--shadow);
+      background: var(--night);
+    }
+
+    .hourglass img,
+    .hourglass video {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+      object-fit: cover;
+      filter: saturate(1.04) contrast(1.04);
+    }
+
+    .hourglass__badge {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      bottom: 22px;
+      padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      color: var(--white);
+      background: rgba(17, 23, 39, .58);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(223,191,122,.34);
+    }
+
+    .hourglass__badge strong {
+      font-family: var(--serif);
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1;
+      color: var(--gold-soft);
+    }
+
+    .mentor {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 74% 30%, rgba(184,135,63,.2), transparent 28rem),
+        linear-gradient(135deg, #17101e 0%, #25172f 45%, #101521 100%);
+      overflow: hidden;
+    }
+
+    .mentor h2,
+    .mentor h3 { color: var(--white); }
+
+    .mentor p { color: rgba(255,250,242,.72); }
+
+    .mentor .eyebrow { color: var(--gold-soft); }
+
+    .mentor__portrait {
+      position: relative;
+      min-height: 640px;
+      border: 1px solid rgba(223,191,122,.28);
+      box-shadow: 0 42px 100px rgba(0,0,0,.34);
+      overflow: hidden;
+      background: #17101e;
+    }
+
+    .mentor__portrait img {
+      width: 100%;
+      height: 100%;
+      min-height: 640px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .mentor__portrait::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to top, rgba(17,23,39,.6), transparent 46%),
+        linear-gradient(90deg, rgba(17,23,39,.2), transparent 48%);
+    }
+
+    .quote {
+      margin-top: 34px;
+      padding: 28px 0 0;
+      border-top: 1px solid rgba(255,250,242,.2);
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.4vw, 48px);
+      line-height: 1;
+      color: #f8dec0;
+    }
+
+    .place-card {
+      padding: clamp(28px, 5vw, 58px);
+      border: 1px solid rgba(184, 135, 63, .24);
+      background:
+        linear-gradient(135deg, rgba(255,250,242,.8), rgba(233,218,195,.54)),
+        radial-gradient(circle at 90% 0%, rgba(112,38,51,.14), transparent 20rem);
+      box-shadow: var(--shadow);
+    }
+
+    .invitation {
+      background: var(--night);
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .invitation::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 16% 24%, rgba(112,38,51,.42), transparent 26rem),
+        radial-gradient(circle at 88% 18%, rgba(184,135,63,.22), transparent 22rem);
+      pointer-events: none;
+    }
+
+    .invitation h2 { color: var(--white); }
+    .invitation p { color: rgba(255,250,242,.72); }
+    .invitation .eyebrow { color: var(--gold-soft); }
+
+    .invite-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: 48px;
+      border: 1px solid rgba(255,250,242,.18);
+      background: rgba(255,250,242,.05);
+      backdrop-filter: blur(16px);
+    }
+
+    .invite-grid div {
+      min-height: 150px;
+      padding: 24px;
+      border-right: 1px solid rgba(255,250,242,.14);
+      border-bottom: 1px solid rgba(255,250,242,.14);
+    }
+
+    .invite-grid div:nth-child(4n) { border-right: 0; }
+    .invite-grid div:nth-last-child(-n+4) { border-bottom: 0; }
+
+    .invite-grid span {
+      display: block;
+      margin-bottom: 16px;
+      color: rgba(255,250,242,.48);
+      font-size: 10px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .invite-grid strong {
+      font-family: var(--serif);
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1;
+      font-weight: 500;
+      color: #fff3df;
+    }
+
+    .final {
+      text-align: center;
+      min-height: 82vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(223,191,122,.28), transparent 24rem),
+        linear-gradient(180deg, #fbf3e7, #e3d2c1);
+    }
+
+    .final h2 {
+      max-width: 930px;
+      margin: 0 auto;
+    }
+
+    .final p {
+      max-width: 620px;
+      margin: 26px auto 0;
+    }
+
+    .final__actions {
+      margin-top: 34px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer {
+      padding: 34px clamp(18px, 5vw, 72px);
+      background: #0d101a;
+      color: rgba(255,250,242,.68);
+      border-top: 1px solid rgba(223,191,122,.18);
+    }
+
+    .footer__inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .payment-panel {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: none;
+      place-items: center;
+      padding: 18px;
+      background: rgba(17, 23, 39, .44);
+      backdrop-filter: blur(12px);
+    }
+
+    .payment-panel.is-open { display: grid; }
+
+    .payment-card {
+      width: min(430px, 100%);
+      padding: 28px;
+      background: var(--white);
+      border: 1px solid rgba(184,135,63,.28);
+      box-shadow: 0 34px 90px rgba(17,23,39,.25);
+    }
+
+    .payment-card h3 {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .payment-card p {
+      margin: 0 0 22px;
+      font-size: 14px;
+    }
+
+    .payment-actions {
+      display: grid;
+      gap: 10px;
+    }
+
+    .close {
+      width: 100%;
+      margin-top: 14px;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font: 600 11px var(--sans);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .mobile-cta {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 30;
+      display: none;
+      padding: 10px;
+      background: rgba(255,250,242,.88);
+      border: 1px solid rgba(184,135,63,.34);
+      box-shadow: 0 20px 60px rgba(17,23,39,.2);
+      backdrop-filter: blur(18px);
+    }
+
+    .mobile-cta .button {
+      width: 100%;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity .8s ease, transform .8s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes float {
+      from { transform: translate3d(0,0,0) rotate(0deg); }
+      to { transform: translate3d(-18px,24px,0) rotate(12deg); }
+    }
+
+    @media (max-width: 980px) {
+      .nav {
+        grid-template-columns: 1fr auto;
+      }
+
+      .nav__links {
+        display: none;
+      }
+
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero__inner {
+        padding-top: 112px;
+      }
+
+      .hero__meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero__meta div:nth-child(2) { border-right: 0; }
+      .hero__meta div:nth-child(-n+2) { border-bottom: 1px solid rgba(255,250,242,.16); }
+
+      .timeline,
+      .cards,
+      .invite-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .invite-grid div,
+      .invite-grid div:nth-child(4n),
+      .invite-grid div:nth-last-child(-n+4) {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,250,242,.14);
+      }
+
+      .invite-grid div:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (max-width: 680px) {
+      body {
+        padding-bottom: 86px;
+      }
+
+      .nav {
+        padding: 18px;
+      }
+
+      .nav__brand {
+        font-size: 16px;
+      }
+
+      .hero h1 {
+        font-size: clamp(56px, 18vw, 92px);
+        line-height: .82;
+      }
+
+      .hero__phrase {
+        font-size: 31px;
+      }
+
+      .hero__actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .hero__actions .button {
+        width: 100%;
+      }
+
+      .hero__meta {
+        grid-template-columns: 1fr;
+      }
+
+      .hero__meta div,
+      .hero__meta div:nth-child(2) {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,250,242,.16);
+      }
+
+      .hero__meta div:last-child {
+        border-bottom: 0;
+      }
+
+      .section {
+        padding: 78px 18px;
+      }
+
+      .cinema {
+        width: calc(100% - 24px);
+      }
+
+      .cinema__frame {
+        aspect-ratio: 16 / 10.5;
+      }
+
+      .cinema video.video-main {
+        transform: translateZ(44px) scale(.94);
+      }
+
+      .cinema__copy {
+        right: 22px;
+      }
+
+      .concept-card,
+      .hourglass,
+      .mentor__portrait {
+        min-height: 460px;
+      }
+
+      .hourglass img,
+      .hourglass video,
+      .mentor__portrait img {
+        min-height: 460px;
+      }
+
+      .hourglass__badge {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .mobile-cta {
+        display: block;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
+    /* Direcao visual especifica do Codigo Dourado */
+    :root {
+      --paper: #080A16;
+      --champagne: #141A40;
+      --sand: #0D1230;
+      --rose: #8E3B2E;
+      --lavender: #2a2f5f;
+      --night: #080A16;
+      --rouge: #8E3B2E;
+      --plum: #0D1230;
+      --gold: #B8924A;
+      --gold-soft: #E6C374;
+      --ink: #F3ECDA;
+      --muted: rgba(243,236,218,.68);
+      --line: rgba(184,146,74,.35);
+      --white: #F3ECDA;
+      --shadow: 0 34px 90px rgba(0,0,0,.34);
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --display: "Cinzel", "Cormorant Garamond", serif;
+      --sans: "EB Garamond", Georgia, serif;
+    }
+
+    body {
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(184,146,74,.18), transparent 36rem),
+        radial-gradient(ellipse at 80% 45%, rgba(20,26,64,.65), transparent 32rem),
+        linear-gradient(180deg, #080A16 0%, #0D1230 48%, #080A16 100%);
+      color: var(--ink);
+    }
+
+    body::before {
+      opacity: .13;
+      background-image:
+        radial-gradient(1px 1px at 12% 22%, rgba(243,236,218,.7), transparent),
+        radial-gradient(1px 1px at 70% 10%, rgba(243,236,218,.5), transparent),
+        radial-gradient(1.5px 1.5px at 44% 6%, rgba(230,195,116,.9), transparent),
+        radial-gradient(1px 1px at 86% 28%, rgba(243,236,218,.4), transparent),
+        radial-gradient(1px 1px at 28% 42%, rgba(243,236,218,.3), transparent),
+        radial-gradient(1px 1px at 60% 33%, rgba(243,236,218,.5), transparent);
+      background-size: 100% 100%;
+      mask-image: none;
+    }
+
+    body::after {
+      opacity: .12;
+      background-image:
+        linear-gradient(rgba(243,236,218,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(243,236,218,.035) 1px, transparent 1px);
+      background-size: 54px 54px;
+    }
+
+    .nav {
+      position: fixed;
+      background: rgba(8,10,22,.78);
+      border-bottom: 1px solid rgba(243,236,218,.14);
+      backdrop-filter: blur(16px);
+      mix-blend-mode: normal;
+    }
+
+    .nav__brand,
+    .nav__links,
+    .nav__year {
+      font-family: "Cinzel", serif;
+      color: var(--gold-soft);
+    }
+
+    .hero {
+      background: var(--night);
+    }
+
+    .hero__video video {
+      filter: saturate(1.05) contrast(1.1) brightness(.5);
+    }
+
+    .hero__wash {
+      background:
+        radial-gradient(ellipse 60% 45% at 50% 18%, rgba(184,146,74,.18) 0%, transparent 70%),
+        radial-gradient(ellipse 80% 60% at 50% 92%, rgba(20,26,64,.64) 0%, transparent 70%),
+        linear-gradient(90deg, rgba(8,10,22,.96), rgba(13,18,48,.58) 48%, rgba(8,10,22,.84));
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      text-transform: none;
+      letter-spacing: .01em;
+      line-height: .92;
+    }
+
+    .hero h1 em {
+      display: block;
+      color: var(--gold-soft);
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .hero__phrase,
+    h2,
+    h3,
+    .timeline__item h3,
+    .card h3,
+    .invite-grid strong,
+    .payment-card h3 {
+      color: var(--white);
+    }
+
+    p,
+    .lead,
+    .card p,
+    .timeline__item p,
+    .identity-list li {
+      color: var(--muted);
+    }
+
+    .button {
+      border-radius: 0;
+      font-family: "Cinzel", serif;
+      background: var(--gold-soft);
+      color: var(--night);
+    }
+
+    .button--ghost,
+    .button--plain {
+      background: transparent;
+      color: var(--gold-soft);
+      border-color: var(--line);
+    }
+
+    .button--ink {
+      background: var(--gold);
+      color: var(--night);
+    }
+
+    .hero__meta {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      background: rgba(8,10,22,.48);
+      border-color: rgba(184,146,74,.35);
+    }
+
+    .hero__meta strong,
+    .label,
+    .kicker,
+    .eyebrow {
+      color: var(--gold-soft);
+    }
+
+    .concept-card,
+    .timeline__item,
+    .card,
+    .place-card {
+      background: rgba(20,26,64,.45);
+      border-color: rgba(243,236,218,.14);
+      box-shadow: 0 22px 70px rgba(0,0,0,.2);
+    }
+
+    .experience,
+    .final {
+      background:
+        radial-gradient(circle at 12% 20%, rgba(184,146,74,.12), transparent 26rem),
+        linear-gradient(180deg, rgba(13,18,48,.86), rgba(8,10,22,.94));
+    }
+
+    .invitation,
+    .mentor,
+    .footer {
+      background: #080A16;
+    }
+
+    .countdown {
+      padding: clamp(42px, 6vw, 74px) clamp(18px, 5vw, 72px);
+      background: linear-gradient(120deg, rgba(184,146,74,.12), rgba(20,26,64,.52));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .countdown__units {
+      width: min(860px, 100%);
+      margin: 26px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      border: 1px solid var(--line);
+      background: var(--line);
+    }
+
+    .countdown__unit {
+      padding: clamp(18px, 3vw, 30px);
+      background: rgba(8,10,22,.72);
+    }
+
+    .countdown__num {
+      display: block;
+      font-family: var(--serif);
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: .9;
+      color: var(--gold-soft);
+      text-shadow: 0 0 34px rgba(230,195,116,.24);
+    }
+
+    .countdown__label {
+      display: block;
+      margin-top: 10px;
+      font-family: "Cinzel", serif;
+      font-size: 10px;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .program-section {
+      background: #080A16;
+    }
+
+    .prog-tabs,
+    .fac-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1px;
+      margin-top: 38px;
+      border: 1px solid var(--line);
+      background: var(--line);
+    }
+
+    .fac-tabs {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      width: min(560px, 100%);
+      margin-inline: auto;
+    }
+
+    .prog-tab,
+    .fac-tab {
+      padding: 18px;
+      background: rgba(20,26,64,.7);
+      cursor: pointer;
+      text-align: center;
+      transition: background .25s ease;
+    }
+
+    .prog-tab.active,
+    .fac-tab.active {
+      background: rgba(184,146,74,.16);
+    }
+
+    .prog-tab span,
+    .fac-tab span {
+      display: block;
+      font-family: "Cinzel", serif;
+      text-transform: uppercase;
+    }
+
+    .prog-tab .tday {
+      font-size: 10px;
+      letter-spacing: .22em;
+      color: var(--gold-soft);
+    }
+
+    .prog-tab .tdate {
+      margin-top: 8px;
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 46px);
+      color: var(--white);
+    }
+
+    .prog-tab .ttitle,
+    .fac-tab span {
+      margin-top: 6px;
+      font-size: 10px;
+      letter-spacing: .14em;
+      color: var(--muted);
+    }
+
+    .prog-panel,
+    .fac-panel {
+      display: none;
+      margin-top: 42px;
+    }
+
+    .prog-panel.active,
+    .fac-panel.active {
+      display: block;
+    }
+
+    .fac-panel.active {
+      display: grid;
+      grid-template-columns: minmax(280px, .72fr) minmax(0, 1fr);
+      gap: clamp(28px, 6vw, 72px);
+      align-items: center;
+    }
+
+    .day-badge,
+    .t-badge,
+    .lote-name,
+    .includes-title {
+      display: inline-flex;
+      margin-bottom: 22px;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      color: var(--gold-soft);
+      font: 600 10px "Cinzel", serif;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .program-timeline {
+      position: relative;
+      display: grid;
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .program-timeline::before {
+      content: "";
+      position: absolute;
+      left: 92px;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: linear-gradient(transparent, var(--line), transparent);
+    }
+
+    .t-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 92px 1fr;
+      gap: 24px;
+    }
+
+    .t-time {
+      padding-top: 12px;
+      text-align: right;
+      color: var(--gold-soft);
+      font-family: "Cinzel", serif;
+      font-size: 12px;
+      letter-spacing: .08em;
+    }
+
+    .t-dot {
+      position: absolute;
+      top: 16px;
+      left: 86px;
+      width: 12px;
+      height: 12px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      background: #080A16;
+      z-index: 1;
+    }
+
+    .t-dot.hi {
+      background: var(--gold-soft);
+      box-shadow: 0 0 18px rgba(230,195,116,.45);
+    }
+
+    .t-card {
+      padding: 22px;
+      border: 1px solid rgba(243,236,218,.14);
+      background: rgba(20,26,64,.42);
+    }
+
+    .t-card.hi {
+      border-color: var(--line);
+      background: rgba(184,146,74,.08);
+    }
+
+    .t-card h4 {
+      margin: 0 0 10px;
+      font-family: "Cinzel", serif;
+      color: var(--white);
+      font-size: 14px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .t-card p,
+    .t-list li {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    .t-list {
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .t-list li {
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .t-list li::before {
+      content: "✦";
+      position: absolute;
+      left: 0;
+      color: var(--gold-soft);
+      font-size: 10px;
+      top: 3px;
+    }
+
+    .includes {
+      width: min(860px, 100%);
+      margin: 36px auto 0;
+      padding: clamp(24px, 4vw, 40px);
+      border: 1px solid var(--line);
+      background: rgba(20,26,64,.38);
+      text-align: left;
+    }
+
+    .includes ul {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .includes li {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .video-teaser {
+      background: #0D1230;
+      border-top: 1px solid rgba(243,236,218,.14);
+      border-bottom: 1px solid rgba(243,236,218,.14);
+      text-align: center;
+    }
+
+    .video-frame {
+      position: relative;
+      width: min(900px, 100%);
+      aspect-ratio: 16 / 9;
+      margin: 34px auto 0;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 50% 40%, rgba(184,146,74,.16), transparent 22rem),
+        rgba(8,10,22,.72);
+      overflow: hidden;
+    }
+
+    .play-icon {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+      border: 1px solid var(--gold-soft);
+      border-radius: 50%;
+      color: var(--gold-soft);
+      font-size: 24px;
+    }
+
+    .portal-band {
+      text-align: center;
+      background:
+        radial-gradient(circle at 50% 10%, rgba(230,195,116,.2), transparent 24rem),
+        linear-gradient(180deg, rgba(8,10,22,.88), rgba(13,18,48,.86));
+      border-top: 1px solid rgba(243,236,218,.14);
+      border-bottom: 1px solid rgba(243,236,218,.14);
+    }
+
+    .portal-date {
+      margin: 18px 0;
+      font-family: var(--serif);
+      font-size: clamp(72px, 12vw, 140px);
+      line-height: .82;
+      color: var(--gold-soft);
+      text-shadow: 0 0 60px rgba(184,146,74,.25);
+    }
+
+    .quote-block {
+      margin: 30px 0;
+      padding: 22px 28px;
+      border-left: 2px solid var(--gold-soft);
+      background: rgba(184,146,74,.06);
+    }
+
+    .quote-block p {
+      margin: 0;
+      color: var(--white);
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.2vw, 30px);
+      font-style: italic;
+      line-height: 1.25;
+    }
+
+    .quote-block span {
+      display: block;
+      margin-top: 10px;
+      color: var(--gold-soft);
+      font-family: "Cinzel", serif;
+      font-size: 10px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .lote {
+      width: min(430px, 100%);
+      margin: 34px auto 0;
+      padding: 34px;
+      border: 1px solid var(--gold-soft);
+      background: rgba(184,146,74,.08);
+    }
+
+    .lote-price {
+      font-family: var(--serif);
+      font-size: clamp(44px, 7vw, 72px);
+      color: var(--white);
+      line-height: .95;
+    }
+
+    .lote-note {
+      display: block;
+      margin-top: 8px;
+      color: var(--gold-soft);
+      font-family: "Cinzel", serif;
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 980px) {
+      .hero__meta,
+      .prog-tabs,
+      .fac-panel.active {
+        grid-template-columns: 1fr;
+      }
+      .countdown__units {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 680px) {
+      .program-timeline::before {
+        left: 0;
+      }
+      .t-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding-left: 22px;
+      }
+      .t-time {
+        text-align: left;
+      }
+      .t-dot {
+        left: -6px;
+      }
+      .includes ul,
+      .countdown__units {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Ajustes solicitados: legibilidade, azul celestial e Sirius */
+    :root {
+      --paper: #061a36;
+      --champagne: #123f73;
+      --sand: #0b2a55;
+      --night: #061426;
+      --plum: #09234b;
+      --gold: #c79a43;
+      --gold-soft: #f0cc74;
+      --ink: #f7f0df;
+      --muted: rgba(247,240,223,.76);
+      --line: rgba(240,204,116,.34);
+      --white: #fff7e6;
+      --sans: "Inter", Arial, sans-serif;
+    }
+
+    body {
+      font-family: var(--sans);
+      background:
+        radial-gradient(circle at 18% 18%, rgba(71,153,255,.28), transparent 32rem),
+        radial-gradient(circle at 78% 8%, rgba(240,204,116,.16), transparent 20rem),
+        radial-gradient(circle at 70% 70%, rgba(25,90,150,.3), transparent 34rem),
+        linear-gradient(180deg, #061426 0%, #0b2a55 48%, #061426 100%);
+    }
+
+    body::before {
+      opacity: .22;
+      background-image:
+        radial-gradient(2px 2px at 12% 18%, rgba(240,204,116,.95), transparent),
+        radial-gradient(1px 1px at 22% 68%, rgba(240,204,116,.55), transparent),
+        radial-gradient(2px 2px at 44% 11%, rgba(240,204,116,.9), transparent),
+        radial-gradient(1px 1px at 58% 38%, rgba(255,247,230,.5), transparent),
+        radial-gradient(3px 3px at 78% 22%, rgba(240,204,116,1), transparent),
+        radial-gradient(1px 1px at 88% 72%, rgba(240,204,116,.65), transparent);
+      background-size: 100% 100%;
+    }
+
+    body::after {
+      opacity: .18;
+      background-image:
+        radial-gradient(circle at 15% 25%, rgba(240,204,116,.6) 0 1px, transparent 2px),
+        radial-gradient(circle at 80% 60%, rgba(240,204,116,.45) 0 1px, transparent 2px);
+      background-size: 140px 140px, 210px 210px;
+    }
+
+    p,
+    .lead,
+    .card p,
+    .timeline__item p,
+    .identity-list li,
+    .t-card p,
+    .t-list li,
+    .includes li {
+      font-family: var(--sans);
+      line-height: 1.72;
+    }
+
+    h2 {
+      line-height: .96;
+    }
+
+    .button {
+      border-radius: 999px;
+    }
+
+    .hero__video video {
+      filter: saturate(1.08) contrast(1.08) brightness(.72);
+    }
+
+    .program-timeline::before {
+      left: 124px;
+    }
+
+    .t-item {
+      grid-template-columns: 92px 1fr;
+      gap: 54px;
+    }
+
+    .t-dot {
+      left: 118px;
+    }
+
+    .t-dot.hi {
+      left: 118px;
+    }
+
+    .t-time {
+      padding-right: 10px;
+    }
+
+    .video-frame video,
+    .concept-card video,
+    .hourglass video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-frame video,
+    .concept-card video {
+      position: absolute;
+      inset: 0;
+    }
+
+    .video-frame::after,
+    .concept-card::before,
+    .hourglass::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(240,204,116,.2), transparent 16rem),
+        linear-gradient(90deg, rgba(6,20,38,.48), rgba(6,20,38,.08));
+      z-index: 1;
+    }
+
+    .video-frame > *,
+    .script-note,
+    .hourglass__badge {
+      z-index: 2;
+    }
+
+    .local-title {
+      font-size: clamp(34px, 4vw, 56px);
+      line-height: 1;
+      overflow-wrap: normal;
+      word-break: keep-all;
+      hyphens: none;
+    }
+
+    .mentor__portrait--walter img {
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .mentor__portrait--walter::after {
+      background: linear-gradient(to top, rgba(6,20,38,.42), transparent 46%);
+    }
+
+    @media (max-width: 680px) {
+      .program-timeline::before {
+        left: 10px;
+      }
+      .t-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding-left: 34px;
+      }
+      .t-dot,
+      .t-dot.hi {
+        left: 4px;
+      }
+      .local-title {
+        font-size: clamp(32px, 10vw, 42px);
+      }
+
+      .hero__video video {
+        transform: none;
+      }
+    }
+
+    body::before {
+      animation: siriusGrid 9s ease-in-out infinite alternate;
+    }
+
+    body::after {
+      opacity: .28;
+      background-image:
+        radial-gradient(circle at 18% 26%, rgba(223, 191, 122, .95) 0 1px, transparent 2.5px),
+        radial-gradient(circle at 70% 72%, rgba(184, 135, 63, .9) 0 1px, transparent 2.5px),
+        radial-gradient(circle at 42% 48%, rgba(255, 238, 180, .72) 0 1px, transparent 2px);
+      background-size: 118px 118px, 174px 174px, 230px 230px;
+      animation: siriusDrift 20s linear infinite, siriusBlink 3.4s ease-in-out infinite alternate;
+    }
+
+    .countdown__units {
+      gap: 14px;
+      border: 0;
+      background: transparent;
+    }
+
+    .countdown__unit {
+      position: relative;
+      overflow: hidden;
+      border-radius: 24px;
+      border: 1px solid rgba(223, 191, 122, .28);
+      background:
+        radial-gradient(circle at 50% 0%, rgba(223, 191, 122, .18), transparent 62%),
+        linear-gradient(145deg, rgba(12, 23, 58, .88), rgba(7, 10, 26, .82));
+      box-shadow: 0 22px 58px rgba(0, 0, 0, .22), inset 0 1px 0 rgba(255, 247, 220, .08);
+      transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
+    }
+
+    .countdown__unit::before {
+      content: "";
+      position: absolute;
+      inset: 9px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 236, 178, .1);
+      pointer-events: none;
+    }
+
+    .countdown__unit:hover {
+      transform: translateY(-4px);
+      border-color: rgba(223, 191, 122, .48);
+      box-shadow: 0 28px 74px rgba(0, 0, 0, .3), 0 0 34px rgba(223, 191, 122, .14);
+    }
+
+    .mentor__portrait--moana img {
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .mentor__portrait--moana::after {
+      background: linear-gradient(to top, rgba(6,20,38,.34), transparent 48%);
+    }
+
+    .video-frame {
+      position: relative;
+    }
+
+    .video-frame video {
+      pointer-events: none;
+    }
+
+    .fullscreen-video {
+      position: absolute;
+      right: clamp(14px, 2vw, 22px);
+      bottom: clamp(14px, 2vw, 22px);
+      z-index: 3;
+      border: 1px solid rgba(255, 248, 220, .44);
+      border-radius: 999px;
+      padding: 11px 16px;
+      color: var(--white);
+      background: rgba(7, 10, 26, .54);
+      backdrop-filter: blur(10px);
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    @keyframes siriusGrid {
+      from { opacity: .17; transform: translate3d(0, 0, 0); }
+      to { opacity: .28; transform: translate3d(8px, -8px, 0); }
+    }
+
+    @keyframes siriusDrift {
+      from { background-position: 0 0, 0 0, 0 0; }
+      to { background-position: 118px -118px, -174px 174px, 230px -230px; }
+    }
+
+    @keyframes siriusBlink {
+      0%, 100% { opacity: .18; filter: drop-shadow(0 0 0 rgba(223, 191, 122, 0)); }
+      45% { opacity: .34; filter: drop-shadow(0 0 5px rgba(223, 191, 122, .38)); }
+      70% { opacity: .24; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Navegação principal">
+    <a href="#topo" class="nav__brand">Código<br>Dourado</a>
+    <div class="nav__links">
+      <a href="#programacao">Programação</a>
+      <a href="#experiencia">Imersão</a>
+      <a href="#mentora">Facilitadores</a>
+      <a href="#local">Local</a>
+    </div>
+    <a href="#convite" class="nav__year">2026</a>
+  </nav>
+
+  <main class="page" id="topo">
+    <header class="hero">
+      <div class="hero__video" aria-hidden="true">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="assets/video-head.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__wash" aria-hidden="true"></div>
+      <div class="hero__bloom" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content reveal">
+          <div class="kicker">✦ 08 de agosto de 2026 · Portal 8:8 · Arraial d'Ajuda · Bahia ✦</div>
+          <h1>O Código <em>Dourado</em></h1>
+          <div class="hero__phrase">Portal Siriano 8/8 · Participação VIP · Experiência Completa</div>
+          <p class="hero__text">Existe uma janela no tempo em que intenção, corpo e presença encontram mais força para atravessar. Esta versão VIP reúne o coração da experiência do Portal 8:8 em um dia de ativação, arte, corpo, cerimônia e integração.</p>
+          <div class="hero__actions">
+            <a class="button" href="#programacao">Ver a programação</a>
+          </div>
+        </div>
+
+        <div class="hero__meta reveal" aria-label="Resumo do evento">
+          <div>
+            <span class="label">Data</span>
+            <strong>08 de agosto · sábado</strong>
+          </div>
+          <div>
+            <span class="label">Local</span>
+            <strong>Arraial d'Ajuda / Bahia</strong>
+          </div>
+          <div>
+            <span class="label">Vagas</span>
+            <strong>Primeiro lote · 10 vagas</strong>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="countdown" id="countdown" aria-label="Contagem regressiva para O Código Dourado">
+      <div class="section__inner reveal">
+        <div class="eyebrow">O portal se abre em</div>
+        <div class="countdown__units">
+          <div class="countdown__unit">
+            <span class="countdown__num" id="cd-dias">00</span>
+            <span class="countdown__label">Dias</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" id="cd-horas">00</span>
+            <span class="countdown__label">Horas</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" id="cd-min">00</span>
+            <span class="countdown__label">Minutos</span>
+          </div>
+          <div class="countdown__unit">
+            <span class="countdown__num" id="cd-seg">00</span>
+            <span class="countdown__label">Segundos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-teaser" id="video">
+      <div class="section__inner reveal">
+        <div class="eyebrow">Sinta como são nossas imersões</div>
+        <h2>Antes de qualquer palavra, sinta a experiência.</h2>
+        <div class="video-frame">
+          <video id="sintaVideo" autoplay muted loop playsinline preload="metadata">
+            <source src="assets/video-sinta-imersoes.mp4" type="video/mp4">
+          </video>
+          <button class="fullscreen-video" type="button" data-fullscreen-video="sintaVideo">Tela cheia</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section program-section" id="programacao">
+      <div class="section__inner">
+        <div class="reveal">
+          <div class="eyebrow">Programação VIP</div>
+          <h2>Portal 8:8 em experiência completa.</h2>
+        </div>
+
+        <div class="prog-tabs reveal" role="tablist" aria-label="Dias da programação">
+          <button class="prog-tab active" type="button" onclick="showTab('dia1', this)">
+            <span class="tday">Sábado</span>
+            <span class="tdate">08/08</span>
+            <span class="ttitle">Portal · Experiência completa</span>
+          </button>
+          <button class="prog-tab" type="button" onclick="showTab('dia2', this)">
+            <span class="tday">Domingo</span>
+            <span class="tdate">09/08</span>
+            <span class="ttitle">Integração · Feijubanda</span>
+          </button>
+        </div>
+
+        <div class="prog-panel active reveal" id="dia1">
+          <span class="day-badge">✦ Portal 8:8 — Experiência completa</span>
+          <p>Um dia inteiro de práticas, alimentação equilibrada, arte, corpo e cerimônia para atravessar o Portal 8:8 em presença.</p>
+          <div class="program-timeline">
+            <div class="t-item"><div class="t-time">10h00</div><div class="t-dot"></div><div class="t-card"><h4>Chegada e Integração dos Participantes</h4></div></div>
+            <div class="t-item"><div class="t-time">10h30</div><div class="t-dot hi"></div><div class="t-card hi"><span class="t-badge">Prática</span><h4>Meditação Coletiva com Cristais — Moana e Walter</h4><ul class="t-list"><li>Conexão energética do grupo</li><li>Ativação com cristais</li><li>Práticas de respiração consciente e Alquimia Corporal</li></ul></div></div>
+            <div class="t-item"><div class="t-time">11h30</div><div class="t-dot"></div><div class="t-card"><h4>Almoço com Alimentação Equilibrada</h4></div></div>
+            <div class="t-item"><div class="t-time">14h30</div><div class="t-dot hi"></div><div class="t-card hi"><span class="t-badge">Corpo</span><h4>Kundalini com Erika Santos</h4></div></div>
+            <div class="t-item"><div class="t-time">15h30</div><div class="t-dot"></div><div class="t-card"><h4>Oficina de Arte — Pintura Aquarela Intuitiva</h4></div></div>
+            <div class="t-item"><div class="t-time">17h30</div><div class="t-dot hi"></div><div class="t-card hi"><span class="t-badge">Ápice</span><h4>Abertura Oficial do Portal — Moana</h4><p>Ativação coletiva da janela de máxima receptividade do Portal 8/8.</p></div></div>
+            <div class="t-item"><div class="t-time">18h30</div><div class="t-dot hi"></div><div class="t-card hi"><span class="t-badge">Grande Cerimônia</span><h4>Imersão nas Plantas de Poder</h4><p>Cerimônia <em>teonanácatl</em> conduzida com:</p><ul class="t-list"><li>Sons Tribais — tecnologia interior da floresta</li><li>Dança, movimento e fogueira</li><li>Práticas de conexão e ancoragem coletiva</li></ul><p style="margin-top:.7rem;color:var(--gold-soft);font-style:italic;">Flash Tattoo — Daniel Tatueiro, durante o evento.</p></div></div>
+          </div>
+        </div>
+
+        <div class="prog-panel reveal" id="dia2">
+          <span class="day-badge">✦ Integração e Feijubanda</span>
+          <p>Domingo de integração, espiritualidade, música, almoço coletivo e confraternização.</p>
+          <div class="program-timeline">
+            <div class="t-item"><div class="t-time">10h–11h</div><div class="t-dot hi"></div><div class="t-card hi"><span class="t-badge">Abertura</span><h4>Roda de Integração</h4><p>Compartilhamento de experiências e insights da noite anterior. Espaço de escuta, testemunho e presença coletiva.</p></div></div>
+            <div class="t-item"><div class="t-time">11h00</div><div class="t-dot hi"></div><div class="t-card hi"><span class="t-badge">Palestra</span><h4>Casa Pai Oxalá — Espiritualidade e Nossa Banda</h4></div></div>
+            <div class="t-item"><div class="t-time">12h30</div><div class="t-dot hi"></div><div class="t-card hi"><span class="t-badge">Reservas via WhatsApp</span><h4>Feijubanda</h4><p>Feijoada completa + celebração e confraternização.</p><div class="hero__actions" style="margin-top:18px;"><a class="button" href="https://wa.me/5573982028412?text=Quero%20reservar%20antecipado%20minha%20participa%C3%A7%C3%A3o%20na%20Feijubanda" target="_blank" rel="noopener noreferrer">Participação Feijubanda — reserve antecipado</a></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="conceito">
+      <div class="section__inner split">
+        <div class="reveal">
+          <div class="eyebrow">O Código</div>
+          <h2>Uma janela que se abre uma vez por ano.</h2>
+          <p class="lead">Os alquimistas do século XVI registraram. Os egípcios reconheceram há 5.000 anos. A astronomia moderna confirma: no dia <strong>08 de agosto</strong>, a estrela mais brilhante do céu — <strong>Sírius</strong> — se alinha com o Sol em Leão e com a Terra.</p>
+          <p>O número da abundância encontra ele mesmo. O canal entre o que você intencionou e o que pode se tornar real está mais aberto do que em qualquer outro momento do ano.</p>
+          <div class="quote-block">
+            <p>"Como é em cima, é embaixo. Como é dentro, é fora."</p>
+            <span>Hermes Trismegisto</span>
+          </div>
+          <p>O Código Dourado, nesta versão VIP do Portal 8:8, é uma experiência presencial criada para que você atravesse essa janela consciente, presente e alinhada — com o código ativado dentro e fora de você.</p>
+        </div>
+
+        <div class="concept-card reveal">
+          <video class="key-art" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo O Código Dourado">
+            <source src="assets/o-codigo.mp4" type="video/mp4">
+          </video>
+          <div class="script-note">O portal se abre quando intenção, corpo e presença se alinham.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portal-band" id="portal">
+      <div class="section__inner reveal" style="max-width: 760px;">
+        <div class="eyebrow">O Portal</div>
+        <div class="portal-date">08 / 08</div>
+        <h2>A janela de maior receptividade do calendário.</h2>
+        <p class="lead">Uma vez por ano, o alinhamento entre Sírius, o Sol em Leão e a Terra cria o que tradições antigas chamaram de portal de materialização. O que está no plano da intenção encontra condições raras para se tornar físico.</p>
+        <p>Em 2026, essa janela se abre no sábado, <strong>08 de agosto</strong> — e você pode estar presente, preparada e ativada.</p>
+      </div>
+    </section>
+
+    <section class="section" id="linha-do-tempo">
+      <div class="section__inner">
+        <div class="reveal">
+          <div class="eyebrow">A Jornada</div>
+          <h2>Três movimentos para atravessar o portal.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item reveal">
+            <div class="timeline__number">01</div>
+            <div>
+              <h3>Conectar</h3>
+              <p>Entrar em presença com o grupo, com o espaço e com a própria intenção.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__number">02</div>
+            <div>
+              <h3>Ativar</h3>
+              <p>Usar o Portal 8/8 como janela de ativação entre intenção, energia e corpo.</p>
+            </div>
+          </article>
+          <article class="timeline__item reveal">
+            <div class="timeline__number">03</div>
+            <div>
+              <h3>Integrar</h3>
+              <p>Ancorar a experiência na arte, na presença e nos compromissos da nova fase.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experiencia">
+      <div class="section__inner">
+        <div class="reveal">
+          <div class="eyebrow">Imersão</div>
+          <h2>Um dia para sair do comum e entrar no campo do dourado.</h2>
+          <p class="lead">Uma experiência presencial com programação viva: meditação, práticas coletivas, arte, Kundalini, tecnologia tribal da floresta, cerimônia e integração.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <span>01</span>
+            <h3>Portal 8/8</h3>
+            <p>Ativação da janela de maior receptividade simbólica do calendário.</p>
+          </article>
+          <article class="card reveal">
+            <span>02</span>
+            <h3>Eu Dourado</h3>
+            <p>Práticas para reconhecer e sustentar uma frequência interna mais inteira.</p>
+          </article>
+          <article class="card reveal">
+            <span>03</span>
+            <h3>Arte tribal</h3>
+            <p>Performances, fogo, som e expressão como linguagem de abertura do campo.</p>
+          </article>
+          <article class="card reveal">
+            <span>04</span>
+            <h3>Plantas de poder</h3>
+            <p>Cacau, cogumelos e medicinas ancestrais conduzidas com cuidado e presença.</p>
+          </article>
+          <article class="card reveal">
+            <span>05</span>
+            <h3>Alquimia corporal</h3>
+            <p>Corpo, respiração e energia como sustentação da mudança de linha do tempo.</p>
+          </article>
+          <article class="card reveal">
+            <span>06</span>
+            <h3>Integração</h3>
+            <p>Rodas, pintura intuitiva, certificados e celebração para ancorar a vivência.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="para-quem">
+      <div class="section__inner split">
+        <div class="reveal">
+          <div class="eyebrow">Para quem é</div>
+          <h2>Para quem sente que chegou a hora de atravessar para a próxima versão.</h2>
+          <ul class="identity-list">
+            <li>Para quem sente que existe uma vida mais próspera esperando ser escolhida.</li>
+            <li>Para quem tem intenções claras, mas sente que algo trava a materialização.</li>
+            <li>Para quem percebe ciclos repetidos no dinheiro, nas decisões ou nos relacionamentos.</li>
+            <li>Para quem quer usar o Portal 8/8 de forma consciente, ativa e presencial.</li>
+            <li>Para quem busca arte, espiritualidade, natureza e conexão em um mesmo campo.</li>
+            <li>Para quem está pronto para ir além do comum e ancorar uma nova linha do tempo.</li>
+          </ul>
+        </div>
+
+        <aside class="hourglass reveal" aria-label="Vagas presenciais limitadas">
+          <video autoplay muted loop playsinline preload="metadata" aria-label="Estrela dourada Sirius em movimento para a seção Para quem é">
+            <source src="assets/estrela-svaro.mp4" type="video/mp4">
+          </video>
+          <div class="hourglass__badge">
+            <span>Vagas presenciais</span>
+            <strong>Limitadas</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section mentor" id="mentora">
+      <div class="section__inner">
+        <div class="reveal" style="text-align:center;">
+          <div class="eyebrow">Facilitadores</div>
+          <h2>Quem conduz a experiência.</h2>
+        </div>
+
+        <div class="fac-tabs reveal" role="tablist" aria-label="Facilitadores">
+          <button class="fac-tab active" type="button" onclick="showFac('fac-moana', this)"><span>Moana</span></button>
+          <button class="fac-tab" type="button" onclick="showFac('fac-walter', this)"><span>Walter</span></button>
+        </div>
+
+        <div class="fac-panel active reveal" id="fac-moana">
+          <div class="mentor__portrait mentor__portrait--moana">
+            <img src="assets/moana-aba-facilitadores.png" alt="Moana, facilitadora de O Código Dourado">
+          </div>
+          <div>
+            <div class="eyebrow">Facilitadora</div>
+            <h2>Moana</h2>
+            <p class="lead">Moana Grandinetti é terapeuta, mentora espiritual e facilitadora de processos de expansão da consciência. Sua trajetória une práticas energéticas, desenvolvimento humano, espiritualidade aplicada e conduções voltadas à liberação de padrões físicos, emocionais e vibracionais.</p>
+            <p>Ao longo de sua jornada, aprofundou-se em técnicas de transmutação energética, alquimia corporal, meditação, leitura de campos sutis e processos de ativação da consciência, criando uma abordagem própria para conduzir pessoas a acessarem novas percepções sobre si mesmas, seus bloqueios e seus caminhos de prosperidade.</p>
+            <p>Sua condução se diferencia pela presença intuitiva, pela sensibilidade em acessar camadas profundas do ser e pela capacidade de traduzir temas espirituais em vivências práticas, corporais e transformadoras.</p>
+            <p>Nesta imersão, Moana traz não apenas conhecimento, mas uma experiência conduzida com profundidade, presença e intenção: abrir espaço para que cada participante reconheça a versão que já existe além dos limites da realidade atual.</p>
+            <div class="quote">"A Outra Versão não é sobre se tornar alguém diferente. É sobre atravessar os padrões que ainda impedem você de acessar quem já existe em uma linha mais próspera, consciente e livre."</div>
+          </div>
+        </div>
+
+        <div class="fac-panel reveal" id="fac-walter">
+          <div class="mentor__portrait mentor__portrait--walter">
+            <img src="assets/walter-lp.jpeg" alt="Walter, facilitador de O Código Dourado">
+          </div>
+          <div>
+            <div class="eyebrow">Facilitador</div>
+            <h2>Walter</h2>
+            <p class="lead">Walter é facilitador de práticas corporais e energéticas, com atuação voltada à Alquimia Corporal, relaxamento profundo, liberação de tensões e reconexão com a presença.</p>
+            <p>Sua condução parte do corpo como portal de transformação: por meio do toque, da respiração, da escuta sensível e de práticas sutis, auxilia os participantes a acessarem estados de maior entrega, desbloqueio e integração.</p>
+            <p>Dentro da imersão, seu trabalho complementa a condução de Moana ao trazer a experiência para o campo físico. Enquanto Moana conduz a expansão da consciência e a mudança de percepção sobre a realidade, Walter sustenta o processo no corpo, ajudando cada participante a sentir, liberar e ancorar a transformação.</p>
+            <p>Sua presença no Portal 8/8 traz profundidade, acolhimento e aterramento para que a experiência não fique apenas no plano mental ou energético, mas seja vivida de forma concreta, sensível e integrada.</p>
+            <div class="quote">"A transformação não acontece apenas na mente. Ela precisa passar pelo corpo para se tornar realidade."</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="local">
+      <div class="section__inner split">
+        <div class="reveal">
+          <div class="eyebrow">Local</div>
+          <h2 class="local-title">HiperEspaço, Arraial d'Ajuda.</h2>
+          <p class="lead">Rua dos Coqueiros, 831 — <strong>HiperEspaço - Wellness • Eventos • Experiências</strong>. Um espaço escolhido pela energia, pela natureza e pela capacidade de acolher presença, intenção e transformação.</p>
+          <div class="hero__actions">
+            <a class="button button--ink" href="https://share.google/p2JfYbdXGvA4nJJ8S" target="_blank" rel="noopener noreferrer">Ver localização</a>
+          </div>
+        </div>
+        <div class="place-card reveal">
+          <div class="eyebrow">Organização</div>
+          <h3>Fauna Lab 360°</h3>
+          <p>Produção, atmosfera e direção de experiência para uma imersão presencial com estética premium, ritualística e sensorial.</p>
+          <p><strong>Endereço:</strong> Rua dos Coqueiros, 831<br><strong>Espaço:</strong> HiperEspaço - Wellness • Eventos • Experiências<br><strong>Evento:</strong> O Código Dourado</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section invitation" id="convite">
+      <div class="section__inner">
+        <div class="reveal">
+          <div class="eyebrow">Convite premium</div>
+          <h2>O código não espera. O Portal 8:8 começa às 10h.</h2>
+          <p class="lead">Reserve sua participação VIP no primeiro lote. São apenas 10 vagas para a experiência completa.</p>
+        </div>
+
+        <div class="invite-grid reveal">
+          <div>
+            <span>Nome</span>
+            <strong>O Código Dourado</strong>
+          </div>
+          <div>
+            <span>Tema</span>
+            <strong>Portal Siriano 8/8</strong>
+          </div>
+          <div>
+            <span>Data</span>
+            <strong>08/08/2026</strong>
+          </div>
+          <div>
+            <span>Horário</span>
+            <strong>A partir das 10h</strong>
+          </div>
+          <div>
+            <span>Cidade</span>
+            <strong>Arraial d'Ajuda / Bahia</strong>
+          </div>
+          <div>
+            <span>Local</span>
+            <strong>Rua dos Coqueiros, 831</strong>
+          </div>
+          <div>
+            <span>Lote</span>
+            <strong>Primeiro lote · apenas 10 vagas</strong>
+          </div>
+          <div>
+            <span>Valor</span>
+            <strong>R$350,00</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final" id="inscricao">
+      <div class="section__inner reveal">
+        <div class="eyebrow">Inscrição</div>
+        <h2>O código não espera.<br>O Portal 8:8 começa às 10h.</h2>
+        <p>Reserve sua participação VIP no primeiro lote: apenas 10 vagas para a experiência completa.</p>
+
+        <div class="lote">
+          <span class="lote-name">✦ Primeiro lote</span>
+          <div class="lote-price">R$ 350,00</div>
+          <span class="lote-note">Apenas 10 vagas · Participação Portal 8:8</span>
+        </div>
+
+        <div class="includes">
+          <span class="includes-title">✦ O que está incluso ✦</span>
+          <ul>
+            <li>Experiência completa do <strong>Portal 8:8</strong></li>
+            <li>Ativação do <strong>"EU DOURADO"</strong></li>
+            <li>Meditação coletiva com cristais, respiração e Alquimia Corporal</li>
+            <li>Pacote com <strong>Plantas de Poder</strong></li>
+            <li>Kundalini, arte intuitiva e integração</li>
+            <li><strong>Alimentação equilibrada</strong> no sábado</li>
+            <li>Local seguro e preparado para a experiência</li>
+          </ul>
+        </div>
+
+        <div class="final__actions">
+          <a class="button" href="https://wa.me/5573982028412?text=Quero%20reservar%20minha%20participa%C3%A7%C3%A3o%20VIP%20no%20Portal%208%3A8%20-%20Primeiro%20Lote%20R%24350" target="_blank" rel="noopener noreferrer">Reservar pelo WhatsApp — R$ 350</a>
+          <a class="button button--ink" href="https://wa.me/5573982028412?text=Quero%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20participa%C3%A7%C3%A3o%20VIP%20no%20Portal%208%3A8" target="_blank" rel="noopener noreferrer">Falar com a equipe</a>
+          <a class="button button--plain" href="https://wa.me/5573982028412" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">Falar pelo WhatsApp</a>
+        </div>
+
+        <div class="place-card" style="margin:34px auto 0; max-width:640px;">
+          <div class="eyebrow">Sua reserva é segura</div>
+          <p style="margin-bottom:0;">A reserva será conduzida diretamente pelo WhatsApp, com atendimento para confirmar sua participação no primeiro lote.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span>O Código Dourado</span>
+      <span>HiperEspaço</span>
+      <span>Fauna Lab 360°</span>
+      <span>Arraial d'Ajuda / Bahia</span>
+    </div>
+  </footer>
+
+  <div class="mobile-cta">
+    <button class="button js-open-pay" type="button">Reservar vaga VIP</button>
+  </div>
+
+  <div class="payment-panel" id="paymentPanel" aria-hidden="true">
+    <div class="payment-card" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+      <h3 id="paymentTitle">Reserve sua participação VIP</h3>
+      <p>Primeiro lote do Portal 8:8: R$350,00. Apenas 10 vagas. A reserva será confirmada diretamente pelo WhatsApp.</p>
+      <div class="payment-actions">
+        <a class="button" href="https://wa.me/5573982028412?text=Quero%20reservar%20minha%20participa%C3%A7%C3%A3o%20VIP%20no%20Portal%208%3A8%20-%20Primeiro%20Lote%20R%24350" target="_blank" rel="noopener noreferrer">Reservar pelo WhatsApp</a>
+        <a class="button button--ink" href="https://wa.me/5573982028412?text=Quero%20reservar%20antecipado%20minha%20participa%C3%A7%C3%A3o%20na%20Feijubanda" target="_blank" rel="noopener noreferrer">Reservar Feijubanda</a>
+      </div>
+      <button class="close js-close-pay" type="button">Fechar</button>
+    </div>
+  </div>
+
+  <script>
+    const revealItems = document.querySelectorAll(".reveal");
+    const panel = document.getElementById("paymentPanel");
+    const openButtons = document.querySelectorAll(".js-open-pay");
+    const closeButton = document.querySelector(".js-close-pay");
+
+    function updateCountdown() {
+      const target = new Date("2026-08-08T10:00:00-03:00");
+      const now = new Date();
+      const diff = target - now;
+      const ids = ["cd-dias", "cd-horas", "cd-min", "cd-seg"];
+
+      if (diff <= 0) {
+        ids.forEach((id) => {
+          const el = document.getElementById(id);
+          if (el) el.textContent = "00";
+        });
+        return;
+      }
+
+      const dias = Math.floor(diff / 86400000);
+      const horas = Math.floor((diff % 86400000) / 3600000);
+      const min = Math.floor((diff % 3600000) / 60000);
+      const seg = Math.floor((diff % 60000) / 1000);
+      const values = [dias, horas, min, seg];
+
+      ids.forEach((id, index) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = String(values[index]).padStart(2, "0");
+      });
+    }
+
+    function showTab(panelId, tabEl) {
+      document.querySelectorAll(".prog-panel").forEach((panelEl) => panelEl.classList.remove("active"));
+      document.querySelectorAll(".prog-tab").forEach((tab) => tab.classList.remove("active"));
+      document.getElementById(panelId).classList.add("active");
+      tabEl.classList.add("active");
+    }
+
+    function showFac(panelId, tabEl) {
+      document.querySelectorAll(".fac-panel").forEach((panelEl) => panelEl.classList.remove("active"));
+      document.querySelectorAll(".fac-tab").forEach((tab) => tab.classList.remove("active"));
+      document.getElementById(panelId).classList.add("active");
+      tabEl.classList.add("active");
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.16 });
+
+    revealItems.forEach((item) => observer.observe(item));
+
+    function openPayment() {
+      panel.classList.add("is-open");
+      panel.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closePayment() {
+      panel.classList.remove("is-open");
+      panel.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    openButtons.forEach((button) => button.addEventListener("click", openPayment));
+    closeButton.addEventListener("click", closePayment);
+    panel.addEventListener("click", (event) => {
+      if (event.target === panel) closePayment();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && panel.classList.contains("is-open")) closePayment();
+    });
+
+    document.querySelectorAll("[data-fullscreen-video]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const video = document.getElementById(button.dataset.fullscreenVideo);
+        if (!video) return;
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) {
+          video.webkitRequestFullscreen();
+        }
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      const y = window.scrollY;
+      document.documentElement.style.setProperty("--scroll", y);
+      document.querySelectorAll(".cinema__frame").forEach((frame) => {
+        const rect = frame.getBoundingClientRect();
+        const depth = Math.max(-8, Math.min(10, (window.innerHeight / 2 - rect.top) / 80));
+        frame.style.transform = `rotateX(${2 + depth * .12}deg) translateY(${depth}px)`;
+      });
+    }, { passive: true });
+  </script>
+</body>
+</html>
